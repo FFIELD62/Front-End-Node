@@ -4,16 +4,16 @@ const axios = require('axios');
 const app = express();
 var bodyParser = require('body-parser');
 
-// Base URL for the API
-// const base_url = "https://api.example.com";
-const base_url = "http://localhost:3000"; 
 
-// Set the template engine
+// const base_url = "http://localhost:3000"; 
+const base_url = "http://node42417-kanin.proen.app.ruk-com.cloud"; 
+
+
 app.set('view engine','ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : false}));
 
-// Server static files
+
 app.use(express.static(__dirname + '/public'));
 
 
